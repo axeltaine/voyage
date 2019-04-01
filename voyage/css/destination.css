@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+.hr {
+    width: 200%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: black;
+    margin: 1em 0;
+
+}
+
+.hr::before,
+.hr::after {
+    content: '';
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 0.2em;
+    border-bottom: 0.2em solid #fb8c00;
+}
+
+span {
+    font-size: 30px;
+}
+
+#container {
+  width: 200%;
+  height: 650px;
+  margin-left: 370px;
+}
+
+#monde {
+  width: 100%;
+  height: 600px;
+  background-image: url('img/monde.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+
+.pointer {
+  width: 30px;
+  height: 51px;
+  background-image: url('img/pointer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.pointer-dubai {
+  bottom: 340px;
+  left: 720px;
+}
+
+.pointer-sf1 {
+  bottom: 450px;
+  left: 165px;
+}
+
+.pointer-sf2 {
+  bottom: 480px;
+  left: 210px;
+}
+
+.pointer-geneve {
+  bottom: 575px;
+  left: 570px;
+}
+
+.pointer-ny {
+  bottom: 620px;
+  left: 330px;
+}
+
+.pointer-tokyo {
+  bottom: 640px;
+  left: 980px;
+}
+
+.desc {
+  display: none;
+}
+
+.pointer:hover + .desc{
+  display: block;
+}
+
+li {
+  display: inline-block;
+  -webkit-transition: 300ms; /* For Safari 3.1 to 6.0 */
+  transition: 300ms;
+}
+
+li:hover {
+  opacity: 0.8;
+  }
+
+
+#carouselmonde {
+  min-height: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #container {
+    display: none;
+  }
+}
